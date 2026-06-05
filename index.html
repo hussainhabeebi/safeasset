@@ -15,54 +15,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "InsuranceAgency",
-  "name": "Safe Assets Official",
-  "description": "IRDAI licensed health insurance advisor serving Kerala",
-  "url": "https://safeassetsofficial.com",
-  "telephone": "+919292026138",
-  "address": {"@type": "PostalAddress", "addressRegion": "Kerala", "addressCountry": "IN"},
-  "areaServed": "Kerala",
-  "knowsLanguage": ["Malayalam", "English"],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Health Insurance Plans",
-    "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Family Floater Health Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Individual Health Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Senior Citizen Health Insurance"}}
-    ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question","name": "What is a family floater health insurance plan?","acceptedAnswer": {"@type": "Answer","text": "A family floater plan covers all family members under a single sum insured, typically more affordable than individual plans for each member."}},
-    {"@type": "Question","name": "Which is the best health insurance in Kerala?","acceptedAnswer": {"@type": "Answer","text": "Star Health, HDFC Ergo and Niva Bupa are top-rated insurers with strong cashless hospital networks across Kerala including Kozhikode, Thrissur and Kochi."}},
-    {"@type": "Question","name": "How to claim health insurance in Kerala?","acceptedAnswer": {"@type": "Answer","text": "For cashless claims, visit a network hospital and show your health card. For reimbursement, submit bills within 30 days. Safe Assets provides 24/7 claim assistance."}}
-  ]
-}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"InsuranceAgency","name":"Safe Assets Official","description":"IRDAI licensed health insurance advisor serving Kerala","url":"https://safeassetsofficial.com","telephone":"+919292026138","address":{"@type":"PostalAddress","addressRegion":"Kerala","addressCountry":"IN"},"areaServed":"Kerala","knowsLanguage":["Malayalam","English"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a family floater health insurance plan?","acceptedAnswer":{"@type":"Answer","text":"A family floater plan covers all family members under a single sum insured, typically more affordable than individual plans."}},{"@type":"Question","name":"Which is the best health insurance in Kerala?","acceptedAnswer":{"@type":"Answer","text":"Star Health, HDFC Ergo and Niva Bupa are top-rated insurers with strong cashless hospital networks across Kerala."}}]}</script>
 </head>
 <body>
 
-<!-- SPLASH / STATUS BAR -->
-<div class="app-shell">
-
-  <!-- TOP NAV -->
+<!-- ═══════════════════════════════════════════════════
+     MOBILE VIEW  (shown below 900px)
+═══════════════════════════════════════════════════ -->
+<div class="mobile-view">
   <header class="top-nav">
     <div class="nav-left">
       <div class="brand-mark">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-          <rect width="28" height="28" rx="8" fill="#0F6E56"/>
-          <path d="M14 5L20 8.5V15C20 18.5 17.2 21.7 14 23C10.8 21.7 8 18.5 8 15V8.5L14 5Z" fill="white" opacity="0.9"/>
-          <path d="M11.5 14L13.2 15.7L16.5 12" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#0F6E56"/><path d="M14 5L20 8.5V15C20 18.5 17.2 21.7 14 23C10.8 21.7 8 18.5 8 15V8.5L14 5Z" fill="white" opacity="0.9"/><path d="M11.5 14L13.2 15.7L16.5 12" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div class="brand-text">
         <span class="brand-name">Safe Assets</span>
@@ -70,15 +35,11 @@
       </div>
     </div>
     <button class="wa-pill" onclick="openWhatsApp('Hi, I need help with health insurance')">
-      <span class="wa-dot"></span>
-      Online now
+      <span class="wa-dot"></span>Online now
     </button>
   </header>
 
-  <!-- MAIN SCROLL CONTENT -->
-  <main class="scroll-body" id="mainBody">
-
-    <!-- HERO SECTION -->
+  <main class="scroll-body">
     <section class="hero-section">
       <div class="hero-eyebrow">
         <span class="badge-pill badge-green">IRDAI Licensed Agent</span>
@@ -86,10 +47,9 @@
       </div>
       <h1 class="hero-heading">Your family's<br><em>health, protected.</em></h1>
       <p class="hero-sub">Compare 20+ plans. Expert advice. Zero hidden fees.<br>Serving Kerala families since 2018.</p>
-
       <div class="hero-search-card">
         <div class="search-row">
-          <select class="search-select" id="coverFor">
+          <select class="search-select" id="m-coverFor">
             <option value="">👨‍👩‍👧‍👦 Who to cover?</option>
             <option value="self">Self only</option>
             <option value="family">Self + Spouse</option>
@@ -99,7 +59,7 @@
           </select>
         </div>
         <div class="search-row">
-          <select class="search-select" id="coverAmount">
+          <select class="search-select" id="m-coverAmount">
             <option value="">🛡️ Cover amount?</option>
             <option value="3">₹3 Lakhs</option>
             <option value="5">₹5 Lakhs</option>
@@ -107,12 +67,11 @@
             <option value="25">₹25 Lakhs</option>
           </select>
         </div>
-        <button class="cta-btn-primary" onclick="handleSearch()">
+        <button class="cta-btn-primary" onclick="handleSearch('m-coverFor','m-coverAmount')">
           <span>Find my plan</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
       </div>
-
       <div class="trust-strip">
         <div class="trust-item"><span class="trust-num">200+</span><span class="trust-label">Families</span></div>
         <div class="trust-divider"></div>
@@ -122,798 +81,669 @@
       </div>
     </section>
 
-    <!-- CATEGORY CHIPS -->
     <section class="section-pad">
       <div class="section-label">Browse by type</div>
       <div class="chip-scroll">
-        <button class="chip chip-active" onclick="filterPlans('all', this)">All Plans</button>
-        <button class="chip" onclick="filterPlans('family', this)">Family Floater</button>
-        <button class="chip" onclick="filterPlans('individual', this)">Individual</button>
-        <button class="chip" onclick="filterPlans('senior', this)">Senior Citizen</button>
-        <button class="chip" onclick="filterPlans('critical', this)">Critical Illness</button>
-        <button class="chip" onclick="filterPlans('group', this)">Group / SME</button>
+        <button class="chip chip-active" onclick="filterPlans('all',this,'m-plans')">All Plans</button>
+        <button class="chip" onclick="filterPlans('family',this,'m-plans')">Family Floater</button>
+        <button class="chip" onclick="filterPlans('individual',this,'m-plans')">Individual</button>
+        <button class="chip" onclick="filterPlans('senior',this,'m-plans')">Senior Citizen</button>
+        <button class="chip" onclick="filterPlans('critical',this,'m-plans')">Critical Illness</button>
+        <button class="chip" onclick="filterPlans('group',this,'m-plans')">Group / SME</button>
       </div>
     </section>
 
-    <!-- PLAN CARDS -->
-    <section class="section-pad" id="planSection">
+    <section class="section-pad">
       <div class="section-header">
         <div class="section-label">Top recommended plans</div>
-        <span class="section-link" onclick="openChat('Show me all available health insurance plans')">View all →</span>
+        <span class="section-link" onclick="mobileOpenChat('Show me all available health insurance plans')">View all →</span>
       </div>
-
-      <div class="plans-stack" id="plansContainer">
-
-        <div class="plan-card featured-card" data-type="family">
-          <div class="plan-card-top">
-            <div class="insurer-logo insurer-star">STAR</div>
-            <div class="plan-info">
-              <div class="plan-name">Comprehensive Care Plus</div>
-              <div class="plan-insurer">Star Health Insurance</div>
-            </div>
-            <div class="plan-price">
-              <div class="price-num">₹12,400</div>
-              <div class="price-period">per year</div>
-            </div>
-          </div>
-          <div class="plan-tags">
-            <span class="ptag">No room rent limit</span>
-            <span class="ptag">OPD cover</span>
-            <span class="ptag">Maternity</span>
-            <span class="ptag best-tag">⭐ Best value</span>
-          </div>
-          <div class="plan-meta">
-            <span>Cover: <strong>₹10 Lakhs</strong></span>
-            <span>Cashless: <strong>500+ Kerala hospitals</strong></span>
-          </div>
-          <div class="plan-actions">
-            <button class="plan-btn-ghost" onclick="openChat('Tell me more about Star Health Comprehensive Care Plus plan')">Details</button>
-            <button class="plan-btn-wa" onclick="openWhatsApp('Hi, I want a quote for Star Health Comprehensive Care Plus plan')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.859L.057 23.862a.5.5 0 00.609.61l6.102-1.472A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.502-5.201-1.38l-.374-.217-3.876.935.966-3.788-.237-.389A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              Get quote
-            </button>
-          </div>
-        </div>
-
-        <div class="plan-card" data-type="family">
-          <div class="plan-card-top">
-            <div class="insurer-logo insurer-hdfc">HDFC</div>
-            <div class="plan-info">
-              <div class="plan-name">Optima Restore</div>
-              <div class="plan-insurer">HDFC Ergo Health</div>
-            </div>
-            <div class="plan-price">
-              <div class="price-num">₹9,800</div>
-              <div class="price-period">per year</div>
-            </div>
-          </div>
-          <div class="plan-tags">
-            <span class="ptag">Restore benefit</span>
-            <span class="ptag">No claim bonus</span>
-            <span class="ptag warn-tag">2yr pre-existing wait</span>
-          </div>
-          <div class="plan-meta">
-            <span>Cover: <strong>₹5 Lakhs</strong></span>
-            <span>Cashless: <strong>300+ Kerala hospitals</strong></span>
-          </div>
-          <div class="plan-actions">
-            <button class="plan-btn-ghost" onclick="openChat('Tell me more about HDFC Ergo Optima Restore plan')">Details</button>
-            <button class="plan-btn-wa" onclick="openWhatsApp('Hi, I want a quote for HDFC Ergo Optima Restore plan')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.859L.057 23.862a.5.5 0 00.609.61l6.102-1.472A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.502-5.201-1.38l-.374-.217-3.876.935.966-3.788-.237-.389A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              Get quote
-            </button>
-          </div>
-        </div>
-
-        <div class="plan-card" data-type="senior">
-          <div class="plan-card-top">
-            <div class="insurer-logo insurer-niva">NIVA</div>
-            <div class="plan-info">
-              <div class="plan-name">Senior First Gold</div>
-              <div class="plan-insurer">Niva Bupa Health</div>
-            </div>
-            <div class="plan-price">
-              <div class="price-num">₹18,200</div>
-              <div class="price-period">per year</div>
-            </div>
-          </div>
-          <div class="plan-tags">
-            <span class="ptag">Age 60–80</span>
-            <span class="ptag">Pre-existing from day 1</span>
-            <span class="ptag">Annual health check</span>
-          </div>
-          <div class="plan-meta">
-            <span>Cover: <strong>₹10 Lakhs</strong></span>
-            <span>Cashless: <strong>200+ Kerala hospitals</strong></span>
-          </div>
-          <div class="plan-actions">
-            <button class="plan-btn-ghost" onclick="openChat('Tell me about Niva Bupa Senior First Gold plan for elderly parents')">Details</button>
-            <button class="plan-btn-wa" onclick="openWhatsApp('Hi, I need a health plan for my senior parents. Niva Bupa Senior First Gold?')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.859L.057 23.862a.5.5 0 00.609.61l6.102-1.472A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.502-5.201-1.38l-.374-.217-3.876.935.966-3.788-.237-.389A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              Get quote
-            </button>
-          </div>
-        </div>
-
-        <div class="plan-card" data-type="individual">
-          <div class="plan-card-top">
-            <div class="insurer-logo insurer-care">CARE</div>
-            <div class="plan-info">
-              <div class="plan-name">Care Supreme</div>
-              <div class="plan-insurer">Care Health Insurance</div>
-            </div>
-            <div class="plan-price">
-              <div class="price-num">₹6,400</div>
-              <div class="price-period">per year</div>
-            </div>
-          </div>
-          <div class="plan-tags">
-            <span class="ptag">Unlimited restore</span>
-            <span class="ptag">Mental health cover</span>
-            <span class="ptag">1yr pre-existing wait</span>
-          </div>
-          <div class="plan-meta">
-            <span>Cover: <strong>₹5 Lakhs</strong></span>
-            <span>Cashless: <strong>250+ Kerala hospitals</strong></span>
-          </div>
-          <div class="plan-actions">
-            <button class="plan-btn-ghost" onclick="openChat('Tell me about Care Supreme individual health plan')">Details</button>
-            <button class="plan-btn-wa" onclick="openWhatsApp('Hi, I want an individual health plan. Interested in Care Supreme.')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.859L.057 23.862a.5.5 0 00.609.61l6.102-1.472A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.502-5.201-1.38l-.374-.217-3.876.935.966-3.788-.237-.389A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              Get quote
-            </button>
-          </div>
-        </div>
-
+      <div class="plans-stack" id="m-plans">
+        <div class="plan-card featured-card" data-type="family"><div class="plan-card-top"><div class="insurer-logo insurer-star">STAR</div><div class="plan-info"><div class="plan-name">Comprehensive Care Plus</div><div class="plan-insurer">Star Health Insurance</div></div><div class="plan-price"><div class="price-num">₹12,400</div><div class="price-period">per year</div></div></div><div class="plan-tags"><span class="ptag">No room rent limit</span><span class="ptag">OPD cover</span><span class="ptag">Maternity</span><span class="ptag best-tag">⭐ Best value</span></div><div class="plan-meta"><span>Cover: <strong>₹10 Lakhs</strong></span><span>Cashless: <strong>500+ Kerala hospitals</strong></span></div><div class="plan-actions"><button class="plan-btn-ghost" onclick="mobileOpenChat('Tell me more about Star Health Comprehensive Care Plus plan')">Details</button><button class="plan-btn-wa" onclick="openWhatsApp('Hi, I want a quote for Star Health Comprehensive Care Plus plan')">WHASAPP_SVG Get quote</button></div></div>
+        <div class="plan-card" data-type="family"><div class="plan-card-top"><div class="insurer-logo insurer-hdfc">HDFC</div><div class="plan-info"><div class="plan-name">Optima Restore</div><div class="plan-insurer">HDFC Ergo Health</div></div><div class="plan-price"><div class="price-num">₹9,800</div><div class="price-period">per year</div></div></div><div class="plan-tags"><span class="ptag">Restore benefit</span><span class="ptag">No claim bonus</span><span class="ptag warn-tag">2yr pre-existing wait</span></div><div class="plan-meta"><span>Cover: <strong>₹5 Lakhs</strong></span><span>Cashless: <strong>300+ Kerala hospitals</strong></span></div><div class="plan-actions"><button class="plan-btn-ghost" onclick="mobileOpenChat('Tell me more about HDFC Ergo Optima Restore plan')">Details</button><button class="plan-btn-wa" onclick="openWhatsApp('Hi, I want a quote for HDFC Ergo Optima Restore plan')">WHASAPP_SVG Get quote</button></div></div>
+        <div class="plan-card" data-type="senior"><div class="plan-card-top"><div class="insurer-logo insurer-niva">NIVA</div><div class="plan-info"><div class="plan-name">Senior First Gold</div><div class="plan-insurer">Niva Bupa Health</div></div><div class="plan-price"><div class="price-num">₹18,200</div><div class="price-period">per year</div></div></div><div class="plan-tags"><span class="ptag">Age 60–80</span><span class="ptag">Pre-existing Day 1</span><span class="ptag">Annual health check</span></div><div class="plan-meta"><span>Cover: <strong>₹10 Lakhs</strong></span><span>Cashless: <strong>200+ Kerala hospitals</strong></span></div><div class="plan-actions"><button class="plan-btn-ghost" onclick="mobileOpenChat('Tell me about Niva Bupa Senior First Gold plan')">Details</button><button class="plan-btn-wa" onclick="openWhatsApp('Hi, I need a senior citizen health plan')">WHASAPP_SVG Get quote</button></div></div>
+        <div class="plan-card" data-type="individual"><div class="plan-card-top"><div class="insurer-logo insurer-care">CARE</div><div class="plan-info"><div class="plan-name">Care Supreme</div><div class="plan-insurer">Care Health Insurance</div></div><div class="plan-price"><div class="price-num">₹6,400</div><div class="price-period">per year</div></div></div><div class="plan-tags"><span class="ptag">Unlimited restore</span><span class="ptag">Mental health cover</span><span class="ptag">1yr pre-existing wait</span></div><div class="plan-meta"><span>Cover: <strong>₹5 Lakhs</strong></span><span>Cashless: <strong>250+ Kerala hospitals</strong></span></div><div class="plan-actions"><button class="plan-btn-ghost" onclick="mobileOpenChat('Tell me about Care Supreme individual health plan')">Details</button><button class="plan-btn-wa" onclick="openWhatsApp('Hi, I want an individual health plan quote')">WHASAPP_SVG Get quote</button></div></div>
       </div>
     </section>
 
-    <!-- QUICK QUESTIONS (AI FAQ) -->
-    <section class="section-pad" id="faqSection">
+    <section class="section-pad">
       <div class="section-label">Quick answers</div>
       <div class="faq-chips">
-        <button class="faq-chip" onclick="openChat('What is a family floater health insurance plan?')">What is family floater?</button>
-        <button class="faq-chip" onclick="openChat('What documents are needed for health insurance claim in Kerala?')">Claim documents?</button>
-        <button class="faq-chip" onclick="openChat('What is the waiting period in health insurance?')">Waiting period?</button>
-        <button class="faq-chip" onclick="openChat('Which hospitals in Kerala accept cashless health insurance?')">Cashless hospitals Kerala?</button>
-        <button class="faq-chip" onclick="openChat('How much health insurance cover do I need for a family of 4?')">How much cover needed?</button>
-        <button class="faq-chip" onclick="openChat('Is maternity covered under health insurance in India?')">Maternity cover?</button>
-        <button class="faq-chip" onclick="openChat('What is not covered in health insurance (exclusions)?')">What is excluded?</button>
-        <button class="faq-chip" onclick="openChat('Can I get health insurance for my parents above 60?')">Insurance for parents 60+?</button>
+        <button class="faq-chip" onclick="mobileOpenChat('What is a family floater health insurance plan?')">What is family floater?</button>
+        <button class="faq-chip" onclick="mobileOpenChat('What documents are needed for health insurance claim?')">Claim documents?</button>
+        <button class="faq-chip" onclick="mobileOpenChat('What is the waiting period in health insurance?')">Waiting period?</button>
+        <button class="faq-chip" onclick="mobileOpenChat('Which hospitals in Kerala accept cashless insurance?')">Cashless hospitals Kerala?</button>
+        <button class="faq-chip" onclick="mobileOpenChat('How much health insurance cover do I need for a family of 4?')">How much cover needed?</button>
+        <button class="faq-chip" onclick="mobileOpenChat('Is maternity covered under health insurance?')">Maternity cover?</button>
+        <button class="faq-chip" onclick="mobileOpenChat('What is the tax benefit on health insurance 80D?')">Tax benefit 80D?</button>
+        <button class="faq-chip" onclick="mobileOpenChat('Can I port my existing health insurance to a better plan?')">Port my policy?</button>
       </div>
     </section>
 
-    <!-- TRUST SECTION -->
     <section class="section-pad">
       <div class="trust-cards">
-        <div class="trust-card">
-          <div class="trust-card-icon">🛡️</div>
-          <div class="trust-card-title">IRDAI Licensed</div>
-          <div class="trust-card-body">Fully certified insurance advisor. All policies issued directly by insurer.</div>
-        </div>
-        <div class="trust-card">
-          <div class="trust-card-icon">🤝</div>
-          <div class="trust-card-title">Claim Assistance</div>
-          <div class="trust-card-body">We stand with you during claims. Guidance from admission to settlement.</div>
-        </div>
-        <div class="trust-card">
-          <div class="trust-card-icon">💬</div>
-          <div class="trust-card-title">Malayalam Support</div>
-          <div class="trust-card-body">Explain in your language. No insurance jargon. Clear and honest advice.</div>
-        </div>
-        <div class="trust-card">
-          <div class="trust-card-icon">🆓</div>
-          <div class="trust-card-title">Zero Brokerage Fee</div>
-          <div class="trust-card-body">We earn from insurer commissions. You pay the same premium as direct.</div>
-        </div>
+        <div class="trust-card"><div class="trust-card-icon">🛡️</div><div class="trust-card-title">IRDAI Licensed</div><div class="trust-card-body">Fully certified insurance advisor. All policies issued directly by insurer.</div></div>
+        <div class="trust-card"><div class="trust-card-icon">🤝</div><div class="trust-card-title">Claim Assistance</div><div class="trust-card-body">We stand with you during claims. Guidance from admission to settlement.</div></div>
+        <div class="trust-card"><div class="trust-card-icon">💬</div><div class="trust-card-title">Malayalam Support</div><div class="trust-card-body">Explain in your language. No insurance jargon. Clear and honest advice.</div></div>
+        <div class="trust-card"><div class="trust-card-icon">🆓</div><div class="trust-card-title">Zero Brokerage Fee</div><div class="trust-card-body">We earn from insurer commissions. You pay the same premium as direct.</div></div>
       </div>
     </section>
-
-    <!-- BOTTOM SPACER FOR FIXED BAR -->
-    <div style="height: 100px;"></div>
-
+    <div style="height:110px"></div>
   </main>
 
-  <!-- FIXED BOTTOM WHATSAPP BAR -->
+  <!-- FIXED BOTTOM WA BAR -->
   <div class="bottom-bar">
     <div class="bottom-bar-info">
-      <div class="wa-avatar">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.859L.057 23.862a.5.5 0 00.609.61l6.102-1.472A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.502-5.201-1.38l-.374-.217-3.876.935.966-3.788-.237-.389A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-      </div>
-      <div>
-        <div class="bottom-bar-title">Talk to an advisor</div>
-        <div class="bottom-bar-sub">Typically replies in 5 min</div>
-      </div>
+      <div class="wa-avatar"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.859L.057 23.862a.5.5 0 00.609.61l6.102-1.472A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.502-5.201-1.38l-.374-.217-3.876.935.966-3.788-.237-.389A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></div>
+      <div><div class="bottom-bar-title">Talk to an advisor</div><div class="bottom-bar-sub">Typically replies in 5 min</div></div>
     </div>
-    <button class="bottom-bar-btn" onclick="openWhatsApp('Hi! I want to know more about health insurance plans')">
-      Chat on WhatsApp
-    </button>
+    <button class="bottom-bar-btn" onclick="openWhatsApp('Hi! I want to know more about health insurance plans')">Chat on WhatsApp</button>
   </div>
 
-  <!-- AI CHAT BUBBLE -->
-  <button class="chat-fab" id="chatFab" onclick="toggleChat()" aria-label="Open AI assistant">
-    <span class="chat-fab-icon" id="chatFabIcon">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-      </svg>
-    </span>
+  <!-- MOBILE CHAT FAB -->
+  <button class="chat-fab" id="m-chatFab" onclick="mobileToggleChat()" aria-label="Open assistant">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
     <span class="chat-fab-pulse"></span>
   </button>
 
-  <!-- AI CHAT PANEL -->
-  <div class="chat-panel" id="chatPanel">
+  <!-- MOBILE CHAT PANEL -->
+  <div class="chat-panel" id="m-chatPanel">
     <div class="chat-panel-header">
       <div class="chat-panel-brand">
-        <div class="chat-panel-avatar">
-          <svg width="16" height="16" viewBox="0 0 28 28" fill="none">
-            <rect width="28" height="28" rx="8" fill="#0F6E56"/>
-            <path d="M14 5L20 8.5V15C20 18.5 17.2 21.7 14 23C10.8 21.7 8 18.5 8 15V8.5L14 5Z" fill="white"/>
-          </svg>
-        </div>
-        <div>
-          <div class="chat-panel-name">SafeAssets AI</div>
-          <div class="chat-panel-status"><span class="status-dot"></span>Instant answers · 24/7</div>
-        </div>
+        <div class="chat-panel-avatar"><svg width="16" height="16" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#0F6E56"/><path d="M14 5L20 8.5V15C20 18.5 17.2 21.7 14 23C10.8 21.7 8 18.5 8 15V8.5L14 5Z" fill="white"/></svg></div>
+        <div><div class="chat-panel-name">SafeAssets Assistant</div><div class="chat-panel-status"><span class="status-dot"></span>Instant answers · 24/7</div></div>
       </div>
-      <button class="chat-close" onclick="toggleChat()">
+      <button class="chat-close" onclick="mobileToggleChat()">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
     </div>
-
-    <div class="chat-messages" id="chatMessages">
-      <div class="msg msg-bot">
-        <div class="msg-bubble">
-          👋 Hi! I'm the Safe Assets AI assistant.<br><br>
-          Ask me anything about health insurance — plans, premiums, claims, coverage. For a personalized quote, I'll connect you with our advisor on WhatsApp.<br><br>
-          <em>You can ask in English or Malayalam!</em>
-        </div>
-        <div class="msg-time">Just now</div>
-      </div>
+    <div class="chat-messages" id="m-chatMessages">
+      <div class="msg msg-bot"><div class="msg-bubble">👋 Hi! Ask me anything about health insurance — plans, premiums, claims, waiting periods.<br><br>For a personal quote, I'll connect you to our advisor on WhatsApp.</div><div class="msg-time">Just now</div></div>
     </div>
-
     <div class="chat-input-area">
       <div class="chat-input-row">
-        <input type="text" class="chat-input" id="chatInput" placeholder="Ask about health insurance..." onkeydown="handleChatKey(event)">
-        <button class="chat-send-btn" id="chatSendBtn" onclick="sendMessage()">
+        <input type="text" class="chat-input" id="m-chatInput" placeholder="Ask about health insurance..." onkeydown="if(event.key==='Enter')sendMessage('m')">
+        <button class="chat-send-btn" id="m-chatSendBtn" onclick="sendMessage('m')">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
       </div>
-      <div class="chat-wa-nudge">
-        Complex queries? <button class="chat-wa-link" onclick="openWhatsApp('Hi, I need help with health insurance')">Talk to advisor on WhatsApp →</button>
+      <div class="chat-wa-nudge">Need a quote? <button class="chat-wa-link" onclick="openWhatsApp('Hi, I need help with health insurance')">Talk to advisor on WhatsApp →</button></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     DESKTOP VIEW  (shown at 900px+)
+═══════════════════════════════════════════════════ -->
+<div class="desktop-view">
+
+  <!-- DESKTOP TOP NAV -->
+  <header class="dt-topnav">
+    <div class="dt-topnav-inner">
+      <div class="dt-brand">
+        <svg width="32" height="32" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#0F6E56"/><path d="M14 5L20 8.5V15C20 18.5 17.2 21.7 14 23C10.8 21.7 8 18.5 8 15V8.5L14 5Z" fill="white" opacity="0.9"/><path d="M11.5 14L13.2 15.7L16.5 12" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div>
+          <div class="dt-brand-name">Safe Assets</div>
+          <div class="dt-brand-sub">Health Insurance Advisor · Kerala</div>
+        </div>
+      </div>
+      <nav class="dt-nav-links">
+        <button class="dt-nav-link dt-nav-active" onclick="dtSection('plans')">Plans</button>
+        <button class="dt-nav-link" onclick="dtSection('compare')">Compare</button>
+        <button class="dt-nav-link" onclick="dtSection('faq')">FAQ</button>
+        <button class="dt-nav-link" onclick="dtSection('about')">About</button>
+      </nav>
+      <div class="dt-nav-actions">
+        <span class="dt-online-badge"><span class="wa-dot"></span>Online now</span>
+        <button class="dt-wa-btn" onclick="openWhatsApp('Hi, I need help with health insurance')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.859L.057 23.862a.5.5 0 00.609.61l6.102-1.472A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.502-5.201-1.38l-.374-.217-3.876.935.966-3.788-.237-.389A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp Advisor
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- DESKTOP HERO BANNER -->
+  <div class="dt-hero">
+    <div class="dt-hero-inner">
+      <div class="dt-hero-left">
+        <div class="dt-hero-badges">
+          <span class="badge-pill badge-green">IRDAI Licensed Agent</span>
+          <span class="badge-pill badge-outline">Malayalam · English</span>
+        </div>
+        <h1 class="dt-hero-h1">Kerala's trusted<br>health insurance<br><em>advisor.</em></h1>
+        <p class="dt-hero-sub">Compare 20+ plans. Zero hidden fees. Claim support included.<br>200+ families protected across Kerala.</p>
+        <div class="dt-hero-search">
+          <select class="dt-select" id="d-coverFor">
+            <option value="">👨‍👩‍👧‍👦 Who to cover?</option>
+            <option value="self">Self only</option>
+            <option value="family">Self + Spouse</option>
+            <option value="family4">Family of 4</option>
+            <option value="parents">Senior Parents</option>
+            <option value="group">Company / Group</option>
+          </select>
+          <select class="dt-select" id="d-coverAmount">
+            <option value="">🛡️ Cover amount?</option>
+            <option value="3">₹3 Lakhs</option>
+            <option value="5">₹5 Lakhs</option>
+            <option value="10">₹10 Lakhs</option>
+            <option value="25">₹25 Lakhs</option>
+          </select>
+          <button class="dt-find-btn" onclick="handleSearch('d-coverFor','d-coverAmount')">Find Plans →</button>
+        </div>
+        <div class="dt-trust-row">
+          <div class="dt-trust-item"><strong>200+</strong><span>Families</span></div>
+          <div class="dt-trust-sep"></div>
+          <div class="dt-trust-item"><strong>20+</strong><span>Insurers</span></div>
+          <div class="dt-trust-sep"></div>
+          <div class="dt-trust-item"><strong>98%</strong><span>Claim support</span></div>
+          <div class="dt-trust-sep"></div>
+          <div class="dt-trust-item"><strong>IRDAI</strong><span>Licensed</span></div>
+        </div>
+      </div>
+      <div class="dt-hero-right">
+        <!-- mini phone mockup -->
+        <div class="dt-phone-frame">
+          <div class="dt-phone-notch"></div>
+          <div class="dt-phone-screen">
+            <div class="dt-phone-chat">
+              <div class="dt-pchat-msg dt-pchat-bot">👋 Hi! Ask me about health insurance in Kerala.</div>
+              <div class="dt-pchat-msg dt-pchat-user">Best plan for family of 4?</div>
+              <div class="dt-pchat-msg dt-pchat-bot">Star Comprehensive covers ₹10L for ~₹12,400/yr. No room rent limit, OPD + maternity included.</div>
+              <div class="dt-pchat-chip" onclick="desktopAskChat('Best family floater plan in Kerala')">Try: Best family floater →</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-</div>
+  <!-- DESKTOP MAIN PORTAL BODY -->
+  <div class="dt-portal">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="dt-sidebar">
+      <div class="dt-sidebar-section">
+        <div class="dt-sidebar-label">Filter plans</div>
+        <div class="dt-sidebar-filters" id="d-filters">
+          <button class="dt-filter-btn dt-filter-active" onclick="dtFilter('all',this)">All Plans</button>
+          <button class="dt-filter-btn" onclick="dtFilter('family',this)">Family Floater</button>
+          <button class="dt-filter-btn" onclick="dtFilter('individual',this)">Individual</button>
+          <button class="dt-filter-btn" onclick="dtFilter('senior',this)">Senior Citizen</button>
+          <button class="dt-filter-btn" onclick="dtFilter('critical',this)">Critical Illness</button>
+          <button class="dt-filter-btn" onclick="dtFilter('group',this)">Group / SME</button>
+        </div>
+      </div>
+
+      <div class="dt-sidebar-section">
+        <div class="dt-sidebar-label">Quick topics</div>
+        <div class="dt-quick-topics">
+          <button class="dt-topic-btn" onclick="desktopAskChat('What is a family floater plan?')">Family floater</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('How does cashless claim work?')">Cashless claim</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('What is waiting period?')">Waiting period</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('Health insurance for senior parents')">Senior plans</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('What is the tax benefit 80D?')">Tax benefit 80D</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('How much coverage do I need?')">Coverage guide</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('What is a top-up health plan?')">Top-up plans</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('Is maternity covered in health insurance?')">Maternity cover</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('How to port health insurance?')">Port my policy</button>
+          <button class="dt-topic-btn" onclick="desktopAskChat('What documents needed for insurance claim?')">Claim documents</button>
+        </div>
+      </div>
+
+      <div class="dt-sidebar-cta">
+        <div class="dt-sidebar-cta-icon">💬</div>
+        <div class="dt-sidebar-cta-text">Need a personalised quote?</div>
+        <button class="dt-sidebar-wa-btn" onclick="openWhatsApp('Hi! I need a personalised health insurance quote')">
+          WhatsApp Advisor
+        </button>
+      </div>
+    </aside>
+
+    <!-- CENTRE — PLANS GRID -->
+    <main class="dt-main" id="d-main-plans">
+      <div class="dt-section-header">
+        <div class="dt-section-title">Recommended plans</div>
+        <div class="dt-active-filter" id="d-activeFilter">Showing: All Plans</div>
+      </div>
+
+      <div class="dt-plans-grid" id="d-plans">
+
+        <div class="dt-plan-card dt-plan-featured" data-type="family">
+          <div class="dt-plan-badge">⭐ Best value</div>
+          <div class="dt-plan-head">
+            <div class="insurer-logo insurer-star" style="width:48px;height:48px;font-size:11px">STAR</div>
+            <div class="dt-plan-info">
+              <div class="dt-plan-name">Comprehensive Care Plus</div>
+              <div class="dt-plan-insurer">Star Health Insurance</div>
+            </div>
+          </div>
+          <div class="dt-plan-price">₹12,400 <span>/ year</span></div>
+          <div class="dt-plan-cover">Cover: <strong>₹10 Lakhs</strong> · Family floater</div>
+          <div class="plan-tags" style="margin:10px 0">
+            <span class="ptag">No room rent limit</span><span class="ptag">OPD cover</span><span class="ptag">Maternity</span>
+          </div>
+          <div class="dt-plan-hospitals">🏥 500+ cashless hospitals in Kerala</div>
+          <div class="dt-plan-actions">
+            <button class="dt-plan-detail-btn" onclick="desktopAskChat('Tell me all details about Star Health Comprehensive Care Plus plan')">View details</button>
+            <button class="dt-plan-wa-btn" onclick="openWhatsApp('Hi, I want a quote for Star Health Comprehensive Care Plus plan')">Get quote</button>
+          </div>
+        </div>
+
+        <div class="dt-plan-card" data-type="family">
+          <div class="dt-plan-head">
+            <div class="insurer-logo insurer-hdfc" style="width:48px;height:48px;font-size:11px">HDFC</div>
+            <div class="dt-plan-info">
+              <div class="dt-plan-name">Optima Restore</div>
+              <div class="dt-plan-insurer">HDFC Ergo Health</div>
+            </div>
+          </div>
+          <div class="dt-plan-price">₹9,800 <span>/ year</span></div>
+          <div class="dt-plan-cover">Cover: <strong>₹5 Lakhs</strong> · Family floater</div>
+          <div class="plan-tags" style="margin:10px 0">
+            <span class="ptag">Restore benefit</span><span class="ptag">No claim bonus</span><span class="ptag warn-tag">2yr wait</span>
+          </div>
+          <div class="dt-plan-hospitals">🏥 300+ cashless hospitals in Kerala</div>
+          <div class="dt-plan-actions">
+            <button class="dt-plan-detail-btn" onclick="desktopAskChat('Tell me all details about HDFC Ergo Optima Restore plan')">View details</button>
+            <button class="dt-plan-wa-btn" onclick="openWhatsApp('Hi, I want a quote for HDFC Ergo Optima Restore plan')">Get quote</button>
+          </div>
+        </div>
+
+        <div class="dt-plan-card" data-type="senior">
+          <div class="dt-plan-head">
+            <div class="insurer-logo insurer-niva" style="width:48px;height:48px;font-size:11px">NIVA</div>
+            <div class="dt-plan-info">
+              <div class="dt-plan-name">Senior First Gold</div>
+              <div class="dt-plan-insurer">Niva Bupa Health</div>
+            </div>
+          </div>
+          <div class="dt-plan-price">₹18,200 <span>/ year</span></div>
+          <div class="dt-plan-cover">Cover: <strong>₹10 Lakhs</strong> · Senior citizen</div>
+          <div class="plan-tags" style="margin:10px 0">
+            <span class="ptag">Age 60–80</span><span class="ptag">Pre-existing Day 1</span><span class="ptag">Health check</span>
+          </div>
+          <div class="dt-plan-hospitals">🏥 200+ cashless hospitals in Kerala</div>
+          <div class="dt-plan-actions">
+            <button class="dt-plan-detail-btn" onclick="desktopAskChat('Tell me about Niva Bupa Senior First Gold plan')">View details</button>
+            <button class="dt-plan-wa-btn" onclick="openWhatsApp('Hi, I need a senior citizen health plan quote')">Get quote</button>
+          </div>
+        </div>
+
+        <div class="dt-plan-card" data-type="individual">
+          <div class="dt-plan-head">
+            <div class="insurer-logo insurer-care" style="width:48px;height:48px;font-size:11px">CARE</div>
+            <div class="dt-plan-info">
+              <div class="dt-plan-name">Care Supreme</div>
+              <div class="dt-plan-insurer">Care Health Insurance</div>
+            </div>
+          </div>
+          <div class="dt-plan-price">₹6,400 <span>/ year</span></div>
+          <div class="dt-plan-cover">Cover: <strong>₹5 Lakhs</strong> · Individual</div>
+          <div class="plan-tags" style="margin:10px 0">
+            <span class="ptag">Unlimited restore</span><span class="ptag">Mental health</span><span class="ptag">1yr wait</span>
+          </div>
+          <div class="dt-plan-hospitals">🏥 250+ cashless hospitals in Kerala</div>
+          <div class="dt-plan-actions">
+            <button class="dt-plan-detail-btn" onclick="desktopAskChat('Tell me about Care Supreme individual health plan')">View details</button>
+            <button class="dt-plan-wa-btn" onclick="openWhatsApp('Hi, I want an individual Care Supreme plan quote')">Get quote</button>
+          </div>
+        </div>
+
+        <div class="dt-plan-card" data-type="critical">
+          <div class="dt-plan-head">
+            <div class="insurer-logo insurer-star" style="width:48px;height:48px;font-size:11px">STAR</div>
+            <div class="dt-plan-info">
+              <div class="dt-plan-name">Cancer Care Gold</div>
+              <div class="dt-plan-insurer">Star Health Insurance</div>
+            </div>
+          </div>
+          <div class="dt-plan-price">₹8,200 <span>/ year</span></div>
+          <div class="dt-plan-cover">Cover: <strong>₹10 Lakhs</strong> · Critical illness</div>
+          <div class="plan-tags" style="margin:10px 0">
+            <span class="ptag">Lump sum payout</span><span class="ptag">All cancer stages</span>
+          </div>
+          <div class="dt-plan-hospitals">💊 Lump sum paid on diagnosis</div>
+          <div class="dt-plan-actions">
+            <button class="dt-plan-detail-btn" onclick="desktopAskChat('Tell me about critical illness and cancer cover plans')">View details</button>
+            <button class="dt-plan-wa-btn" onclick="openWhatsApp('Hi, I want a critical illness cover quote')">Get quote</button>
+          </div>
+        </div>
+
+        <div class="dt-plan-card" data-type="group">
+          <div class="dt-plan-head">
+            <div class="insurer-logo insurer-hdfc" style="width:48px;height:48px;font-size:11px">HDFC</div>
+            <div class="dt-plan-info">
+              <div class="dt-plan-name">Group Suraksha</div>
+              <div class="dt-plan-insurer">HDFC Ergo Health</div>
+            </div>
+          </div>
+          <div class="dt-plan-price">₹3,200 <span>/ employee/yr</span></div>
+          <div class="dt-plan-cover">Cover: <strong>₹3 Lakhs</strong> · Group / SME</div>
+          <div class="plan-tags" style="margin:10px 0">
+            <span class="ptag">No medicals</span><span class="ptag">Pre-existing Day 1</span>
+          </div>
+          <div class="dt-plan-hospitals">👥 Minimum 5 employees</div>
+          <div class="dt-plan-actions">
+            <button class="dt-plan-detail-btn" onclick="desktopAskChat('Tell me about group health insurance for companies')">View details</button>
+            <button class="dt-plan-wa-btn" onclick="openWhatsApp('Hi, I need group health insurance for my company')">Get quote</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TRUST ROW -->
+      <div class="dt-trust-cards">
+        <div class="dt-trust-card"><span>🛡️</span><div><strong>IRDAI Licensed</strong><p>All policies issued by insurer directly</p></div></div>
+        <div class="dt-trust-card"><span>🤝</span><div><strong>Claim Assistance</strong><p>End-to-end support admission to settlement</p></div></div>
+        <div class="dt-trust-card"><span>💬</span><div><strong>Malayalam Support</strong><p>Clear advice. No jargon. Your language.</p></div></div>
+        <div class="dt-trust-card"><span>🆓</span><div><strong>Zero Brokerage</strong><p>Same premium as buying direct from insurer</p></div></div>
+      </div>
+    </main>
+
+    <!-- RIGHT — DESKTOP CHAT PANEL (always visible) -->
+    <aside class="dt-chat-aside">
+      <div class="dt-chat-header">
+        <div class="dt-chat-brand">
+          <div class="chat-panel-avatar" style="width:32px;height:32px"><svg width="14" height="14" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#0F6E56"/><path d="M14 5L20 8.5V15C20 18.5 17.2 21.7 14 23C10.8 21.7 8 18.5 8 15V8.5L14 5Z" fill="white"/></svg></div>
+          <div>
+            <div class="dt-chat-name">SafeAssets Assistant</div>
+            <div class="chat-panel-status"><span class="status-dot"></span>Instant · No sign-in needed</div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-messages dt-chat-messages" id="d-chatMessages">
+        <div class="msg msg-bot"><div class="msg-bubble">👋 Hello! I can answer questions about health insurance plans, premiums, claims and more.<br><br>For a personalised quote, tap the WhatsApp button below.</div><div class="msg-time">Just now</div></div>
+      </div>
+      <div class="chat-input-area" style="border-radius:0 0 12px 12px">
+        <div class="chat-input-row">
+          <input type="text" class="chat-input" id="d-chatInput" placeholder="Ask anything..." onkeydown="if(event.key==='Enter')sendMessage('d')">
+          <button class="chat-send-btn" id="d-chatSendBtn" onclick="sendMessage('d')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <div class="chat-wa-nudge">Need a quote? <button class="chat-wa-link" onclick="openWhatsApp('Hi, I need help with health insurance')">WhatsApp advisor →</button></div>
+      </div>
+    </aside>
+
+  </div><!-- /dt-portal -->
+
+  <footer class="dt-footer">
+    <div class="dt-footer-inner">
+      <div class="dt-footer-brand">
+        <strong>Safe Assets</strong> — IRDAI Licensed Health Insurance Advisor, Kerala
+      </div>
+      <div class="dt-footer-links">
+        <span onclick="openWhatsApp('Hi, I want to contact Safe Assets')">📞 +91 92920 26138</span>
+        <span>Malayalam · English</span>
+        <span>Malappuram, Kerala</span>
+      </div>
+    </div>
+  </footer>
+</div><!-- /desktop-view -->
+
 
 <script>
 const PHONE = '919292026138';
-
-/* ============================================================
-   KNOWLEDGE BASE — all answers served from here, zero API
-   Add/edit entries freely. keywords[] = trigger words.
-   wa: true = show WhatsApp button after answer.
-   ============================================================ */
-const KB = [
-  /* ── PLANS ── */
-  {
-    id: 'family_floater',
-    keywords: ['family floater','family plan','family cover','kutumba','kudumba','family of 4','family of four','self spouse','husband wife'],
-    answer: `<strong>Family Floater Plan 👨‍👩‍👧‍👦</strong><br><br>
-A family floater covers your entire family — self, spouse, children — under <strong>one single sum insured</strong>. If you take ₹10L cover, any family member can use up to ₹10L in a year.<br><br>
-✅ 10–20% cheaper than buying individual plans for each member<br>
-✅ Ideal for families with children below 25 years<br>
-✅ One premium, one renewal date<br><br>
-<em>Popular choice: Star Health Comprehensive Care Plus — ₹10L cover for family of 4 at ~₹12,400/year</em>`,
-    wa: true
-  },
-  {
-    id: 'individual',
-    keywords: ['individual plan','individual health','single plan','only myself','only me','self only','for myself'],
-    answer: `<strong>Individual Health Insurance 🙋</strong><br><br>
-An individual plan covers <strong>one person</strong> with their own dedicated sum insured. Best if you're single or want separate cover for each family member.<br><br>
-✅ Sum insured fully available for you alone<br>
-✅ No impact if another family member makes a claim<br>
-✅ Recommended minimum: <strong>₹5 Lakhs</strong> in Kerala<br><br>
-<em>Good option: Care Supreme — ₹5L cover, unlimited restore, ₹6,400/year</em>`,
-    wa: true
-  },
-  {
-    id: 'senior',
-    keywords: ['senior','parents','amma','achan','mother','father','elderly','aged','60','65','70','old age','60 plus','senior citizen'],
-    answer: `<strong>Senior Citizen Health Plans 👴👵</strong><br><br>
-Special plans for parents aged <strong>60–85 years</strong>. Most regular plans stop covering pre-existing diseases — senior plans are designed for this.<br><br>
-✅ Entry age: 60 to 80 years (some up to 85)<br>
-✅ Pre-existing disease cover from Day 1 in some plans<br>
-✅ Annual health check-up included<br>
-✅ Lifetime renewability<br><br>
-<em>Recommended: Niva Bupa Senior First Gold — ₹10L cover at ~₹18,200/year</em><br><br>
-⚠️ <em>Senior plans have higher premiums — our advisor will find the best price for your parents' age and health condition.</em>`,
-    wa: true
-  },
-  {
-    id: 'critical',
-    keywords: ['critical illness','cancer','heart attack','stroke','kidney failure','liver','critical','major disease','dread'],
-    answer: `<strong>Critical Illness Cover 🏥</strong><br><br>
-This pays a <strong>lump sum amount</strong> if you are diagnosed with a listed serious illness (cancer, heart attack, stroke, kidney failure, etc.) — regardless of actual treatment cost.<br><br>
-✅ Lump sum payout — use for treatment, income replacement, or anything<br>
-✅ Covers 30–50 critical conditions depending on plan<br>
-✅ Can be taken as <em>add-on</em> to your existing health plan<br>
-✅ Recommended cover: ₹10L–₹25L<br><br>
-<em>Best taken early when you're healthy — premiums are much lower before age 40.</em>`,
-    wa: true
-  },
-  {
-    id: 'group',
-    keywords: ['group','company','employee','staff','business','sme','office','team','corporate'],
-    answer: `<strong>Group / Corporate Health Insurance 🏢</strong><br><br>
-If you run a business or want to cover your employees, a group mediclaim policy is the best choice.<br><br>
-✅ No medical tests required for entry<br>
-✅ Pre-existing diseases covered from Day 1<br>
-✅ Can include maternity, dental, vision as add-ons<br>
-✅ Tax deductible as business expense<br>
-✅ Minimum 5 employees to start<br><br>
-<em>Pricing depends on employee count, age profile and sum insured. Our advisor will get you the best group rate.</em>`,
-    wa: true
-  },
-
-  /* ── CLAIMS ── */
-  {
-    id: 'cashless_claim',
-    keywords: ['cashless','network hospital','tpa','health card','admission','hospitalization','hospital admission','cash free'],
-    answer: `<strong>Cashless Claim Process 🏥</strong><br><br>
-<strong>Step 1:</strong> Go to a network hospital (check your insurer's app or call TPA)<br>
-<strong>Step 2:</strong> Show your health insurance card at the TPA desk / insurance desk<br>
-<strong>Step 3:</strong> Hospital sends pre-authorization to insurer<br>
-<strong>Step 4:</strong> Insurer approves — you get treated without paying (except co-pay if any)<br>
-<strong>Step 5:</strong> Discharge — sign final bill, insurer pays hospital directly<br><br>
-✅ No upfront payment needed<br>
-✅ Available at 500+ hospitals in Kerala (Star Health network)<br><br>
-<em>💡 Tip: Always call your TPA helpline before admission for planned surgeries.</em>`,
-    wa: false
-  },
-  {
-    id: 'reimbursement',
-    keywords: ['reimbursement','reimburse','paid bills','submit bills','non network','bills','documents claim','claim documents','claim process'],
-    answer: `<strong>Reimbursement Claim Process 📋</strong><br><br>
-If you got treated at a non-network hospital, you pay first and claim later.<br><br>
-<strong>Documents needed:</strong><br>
-📄 Original hospital bills & receipts<br>
-📄 Doctor's prescription & discharge summary<br>
-📄 Investigation reports (X-ray, blood test, etc.)<br>
-📄 Claim form (from insurer website)<br>
-📄 Bank account details (cancelled cheque)<br>
-📄 Photo ID proof<br><br>
-<strong>Submit within:</strong> <em>30–45 days of discharge</em><br><br>
-⚡ Safe Assets helps you with claim documentation — just WhatsApp us all your bills!`,
-    wa: true
-  },
-  {
-    id: 'claim_rejection',
-    keywords: ['claim rejected','claim denied','rejection','not paid','refused','denied','reject'],
-    answer: `<strong>Claim Rejected? Here's what to do 🚨</strong><br><br>
-Don't panic. Most rejections can be appealed successfully.<br><br>
-<strong>Common reasons for rejection:</strong><br>
-❌ Non-disclosure of pre-existing disease at time of buying<br>
-❌ Treatment during waiting period<br>
-❌ Exclusion in policy (cosmetic surgery, etc.)<br>
-❌ Incorrect/incomplete documents<br><br>
-<strong>Steps to appeal:</strong><br>
-1. Get rejection letter in writing<br>
-2. Write to insurer's grievance officer<br>
-3. Escalate to IRDAI Bima Bharosa portal<br>
-4. File complaint with Insurance Ombudsman<br><br>
-<em>Our advisor has helped many clients get rejected claims paid. Contact us immediately.</em>`,
-    wa: true
-  },
-
-  /* ── WAITING PERIODS ── */
-  {
-    id: 'waiting_period',
-    keywords: ['waiting period','wait','pre existing','pre-existing','waiting','how long','first claim','initial wait','exclusion period'],
-    answer: `<strong>Waiting Periods in Health Insurance ⏳</strong><br><br>
-<strong>Initial waiting period:</strong> 30 days from policy start<br>
-(Accidents are covered from Day 1)<br><br>
-<strong>Pre-existing diseases (PED):</strong> 2–4 years<br>
-(Diabetes, BP, thyroid, etc. — not covered until waiting period ends)<br><br>
-<strong>Specific illness waiting:</strong> 1–2 years<br>
-(Hernia, cataract, joint replacement, etc.)<br><br>
-<strong>Maternity:</strong> 9 months to 2 years depending on plan<br><br>
-💡 <em>Waiting periods are one of the biggest reasons to buy health insurance EARLY — before any health condition develops.</em>`,
-    wa: false
-  },
-
-  /* ── PREMIUMS & PRICING ── */
-  {
-    id: 'premium',
-    keywords: ['premium','price','cost','how much','rate','charge','afford','cheap','expensive','low cost','budget','amount'],
-    answer: `<strong>Health Insurance Premiums in Kerala 💰</strong><br><br>
-Premiums depend on: <strong>age, sum insured, family size, medical history</strong><br><br>
-<strong>Approximate annual premiums:</strong><br>
-👤 Individual (age 30, ₹5L): ~₹5,000–7,000/year<br>
-👨‍👩‍👧‍👦 Family of 4 (₹10L): ~₹10,000–15,000/year<br>
-👴 Senior citizen (age 65, ₹5L): ~₹20,000–35,000/year<br><br>
-💡 <em>Tax benefit: Premiums up to ₹25,000 (self/family) + ₹50,000 (senior parents) deductible under Section 80D</em><br><br>
-<em>For exact premium for your age and needs, our advisor will get you quotes from 5+ insurers.</em>`,
-    wa: true
-  },
-  {
-    id: 'tax',
-    keywords: ['tax','80d','section 80d','income tax','deduction','tax benefit','tax saving','tax exemption'],
-    answer: `<strong>Tax Benefits — Section 80D 📊</strong><br><br>
-Health insurance premiums qualify for <strong>income tax deduction under Section 80D</strong>:<br><br>
-💰 <strong>Self + spouse + children:</strong> Up to ₹25,000/year<br>
-💰 <strong>Self + family + senior parents (60+):</strong> Up to ₹75,000/year<br>
-💰 <strong>If you are also senior (60+):</strong> Up to ₹1,00,000/year<br><br>
-✅ Applicable for individuals and HUFs<br>
-✅ Even premium paid for parents qualifies<br>
-✅ Preventive health check-up: ₹5,000 within above limit<br><br>
-<em>A ₹10L family floater + ₹10L senior parent plan can save you ₹15,000–22,000 in tax every year!</em>`,
-    wa: false
-  },
-
-  /* ── SUM INSURED ── */
-  {
-    id: 'sum_insured',
-    keywords: ['how much cover','sum insured','coverage amount','how much insurance','adequate','enough cover','5 lakh','10 lakh','25 lakh','minimum cover','cover amount'],
-    answer: `<strong>How Much Cover Do You Need? 🛡️</strong><br><br>
-Medical costs in Kerala are rising 15–20% every year. Here's what experts recommend:<br><br>
-👤 <strong>Individual (under 35):</strong> Minimum ₹5 Lakhs<br>
-👨‍👩‍👧‍👦 <strong>Family of 4:</strong> Minimum ₹10 Lakhs (₹15–25L ideal)<br>
-👴 <strong>Senior parents:</strong> ₹10–15 Lakhs<br>
-🏙️ <strong>Urban Kerala (Kochi/Kozhikode):</strong> Add 20–30% more<br><br>
-💡 <em>A single cardiac surgery in Kerala can cost ₹3–8 Lakhs. Don't under-insure.</em><br><br>
-Restore benefit plans effectively double your cover if the sum is exhausted.`,
-    wa: true
-  },
-
-  /* ── MATERNITY ── */
-  {
-    id: 'maternity',
-    keywords: ['maternity','pregnancy','delivery','childbirth','baby','newborn','ante natal','post natal','pregnant','prasavam'],
-    answer: `<strong>Maternity Cover in Health Insurance 🤱</strong><br><br>
-Most plans cover maternity expenses but require a <strong>waiting period</strong>:<br><br>
-⏳ Waiting period: <strong>9 months to 2 years</strong> (plan dependent)<br>
-✅ Normal delivery: ₹25,000–₹75,000 covered<br>
-✅ C-section: ₹50,000–₹1,00,000 covered<br>
-✅ Newborn cover: First 90 days usually included<br>
-✅ Pre & post natal consultations in some plans<br><br>
-⚠️ <em>Important: Buy health insurance with maternity cover BEFORE planning pregnancy — the waiting period must be completed first.</em><br><br>
-<em>Star Health and Niva Bupa have strong maternity benefit plans available in Kerala.</em>`,
-    wa: true
-  },
-
-  /* ── OPD ── */
-  {
-    id: 'opd',
-    keywords: ['opd','outpatient','doctor visit','consultation','medicine','pharmacy','day care','daycare','out patient'],
-    answer: `<strong>OPD & Day Care Cover 🩺</strong><br><br>
-<strong>OPD Cover</strong> pays for doctor consultations, medicines, diagnostics — without hospitalization.<br><br>
-✅ Available in premium plans (Star, Niva Bupa, Aditya Birla)<br>
-✅ Typically ₹5,000–₹25,000 OPD limit per year<br>
-✅ Pharmacy bills, specialist visits, diagnostic tests covered<br><br>
-<strong>Day Care procedures</strong> (no overnight stay needed):<br>
-✅ Cataract surgery, chemotherapy, dialysis, minor surgeries<br>
-✅ All standard plans cover 400+ day care procedures<br><br>
-<em>OPD cover adds 10–20% to premium but can save much more for active families.</em>`,
-    wa: false
-  },
-
-  /* ── PORTABILITY ── */
-  {
-    id: 'portability',
-    keywords: ['portability','switch','change insurer','transfer','port','existing policy','current policy','change company'],
-    answer: `<strong>Health Insurance Portability 🔄</strong><br><br>
-You can switch your health insurer <strong>without losing your accumulated benefits</strong> (waiting period credit, no-claim bonus).<br><br>
-✅ IRDAI mandated — every insurer must accept portability<br>
-✅ Waiting period credits transfer to new insurer<br>
-✅ No-claim bonus carried forward<br>
-✅ Apply 45 days before your renewal date<br><br>
-<strong>When to consider switching:</strong><br>
-🔸 Poor claim settlement experience<br>
-🔸 Better plan available at same/lower premium<br>
-🔸 Hospital network not good in your area<br><br>
-<em>Our advisor can compare your existing plan and tell you if switching makes sense — free of charge.</em>`,
-    wa: true
-  },
-
-  /* ── EXCLUSIONS ── */
-  {
-    id: 'exclusions',
-    keywords: ['exclusion','not covered','excluded','what is not','dental','vision','eye','cosmetic','plastic surgery','ayurveda','alternative'],
-    answer: `<strong>What's NOT Covered in Health Insurance ❌</strong><br><br>
-<strong>Standard exclusions in most plans:</strong><br>
-❌ Cosmetic & plastic surgery (non-medical)<br>
-❌ Dental treatment (unless from accident)<br>
-❌ Vision correction (spectacles, contact lenses)<br>
-❌ Pre-existing diseases during waiting period<br>
-❌ Self-inflicted injuries<br>
-❌ War, nuclear hazards<br>
-❌ Experimental treatments<br>
-❌ Fertility treatments / IVF (in most plans)<br><br>
-<strong>Now covered in modern plans:</strong><br>
-✅ Ayurveda, Yoga, Unani (AYUSH) — many plans now cover<br>
-✅ Mental health treatment — mandatory since 2018 IRDAI ruling<br>
-✅ HIV/AIDS — covered in most plans now`,
-    wa: false
-  },
-
-  /* ── IRDAI / AGENT ── */
-  {
-    id: 'irdai',
-    keywords: ['irdai','license','licensed','certified','genuine','safe assets','who are you','about','trustworthy','authentic','agent'],
-    answer: `<strong>About Safe Assets 🛡️</strong><br><br>
-Safe Assets is an <strong>IRDAI licensed health insurance advisory</strong> serving Kerala families.<br><br>
-✅ Fully certified insurance agent — IRDAI licensed<br>
-✅ Tie-ups with 20+ insurance companies<br>
-✅ Serving 200+ Kerala families<br>
-✅ Zero brokerage fee — you pay same premium as buying direct<br>
-✅ Malayalam & English support<br>
-✅ Claim assistance from admission to settlement<br>
-✅ Based in Kerala — understands local hospitals & needs<br><br>
-📞 <strong>Call/WhatsApp: +91 92920 26138</strong><br><br>
-<em>We earn commission from the insurer — not from you. Our goal is to get you the right plan, not the most expensive one.</em>`,
-    wa: false
-  },
-
-  /* ── STAR HEALTH ── */
-  {
-    id: 'star_health',
-    keywords: ['star health','star insurance','star comprehensive','star plan'],
-    answer: `<strong>Star Health Insurance Plans 🌟</strong><br><br>
-Star Health is India's largest standalone health insurer with excellent Kerala coverage.<br><br>
-<strong>Popular Star Plans:</strong><br>
-🔹 <strong>Comprehensive Care Plus</strong> — Best family plan, no room rent limit, OPD, maternity<br>
-🔹 <strong>Family Health Optima</strong> — Budget-friendly family floater<br>
-🔹 <strong>Senior Citizen Red Carpet</strong> — For age 60+, pre-existing covered<br>
-🔹 <strong>Young Star</strong> — For age 18–40, affordable premiums<br><br>
-📍 <strong>Kerala network:</strong> 500+ cashless hospitals including all major hospitals in Kozhikode, Kochi, Thrissur, Trivandrum<br><br>
-<em>Star Health has one of the fastest claim settlement times in Kerala.</em>`,
-    wa: true
-  },
-
-  /* ── HDFC ERGO ── */
-  {
-    id: 'hdfc',
-    keywords: ['hdfc','optima','hdfc ergo','hdfc health'],
-    answer: `<strong>HDFC Ergo Health Insurance 💙</strong><br><br>
-HDFC Ergo Optima Restore is one of the most popular health plans in Kerala.<br><br>
-<strong>Key features:</strong><br>
-✅ <strong>Restore benefit</strong> — Sum insured automatically restored if exhausted<br>
-✅ No claim bonus: 50% increase every claim-free year<br>
-✅ 2-year waiting period for pre-existing diseases<br>
-✅ 300+ cashless hospitals in Kerala<br><br>
-<strong>Premiums (approx):</strong><br>
-₹5L individual: ~₹7,200/year<br>
-₹10L family of 4: ~₹12,500/year<br><br>
-<em>Good choice for people who want restore benefit without paying for OPD.</em>`,
-    wa: true
-  },
-
-  /* ── NIVA BUPA ── */
-  {
-    id: 'niva_bupa',
-    keywords: ['niva bupa','niva','bupa','max bupa','reassure'],
-    answer: `<strong>Niva Bupa Health Insurance 💚</strong><br><br>
-Formerly Max Bupa — Niva Bupa is known for fast claim settlement and good network.<br><br>
-<strong>Popular plans:</strong><br>
-🔹 <strong>ReAssure 2.0</strong> — Unlimited restore, lock the clock (premium freezes at entry age)<br>
-🔹 <strong>Senior First Gold</strong> — Best senior citizen plan, PED from Day 1<br>
-🔹 <strong>Health Premia</strong> — Premium plan with global coverage option<br><br>
-✅ 200+ cashless hospitals in Kerala<br>
-✅ 30-minute cashless approval<br>
-✅ Good for families with senior parents<br><br>
-<em>Niva Bupa "Lock the Clock" feature is unique — your premium never increases with age once you buy.</em>`,
-    wa: true
-  },
-
-  /* ── QUOTE / BUY ── */
-  {
-    id: 'quote',
-    keywords: ['quote','buy','purchase','enroll','apply','get plan','want plan','interested','how to buy','renew','renewal'],
-    answer: `<strong>Get Your Personalized Quote 📋</strong><br><br>
-To give you the best plan at the lowest premium, our advisor needs just a few details:<br><br>
-📝 Your age & family members' ages<br>
-📝 Any existing health conditions (diabetes, BP, etc.)<br>
-📝 Preferred sum insured (₹5L / ₹10L / ₹25L)<br>
-📝 Budget range<br><br>
-Our advisor will compare plans from 5+ insurers and recommend the best fit — <strong>completely free</strong>.<br><br>
-⚡ <em>Most clients get their policy issued within 24 hours!</em>`,
-    wa: true
-  },
-
-  /* ── HOSPITALS KERALA ── */
-  {
-    id: 'hospitals',
-    keywords: ['hospital','network','cashless hospital','kozhikode','kochi','thrissur','calicut','malappuram','kerala hospital','which hospital'],
-    answer: `<strong>Cashless Hospitals in Kerala 🏥</strong><br><br>
-Major hospitals across Kerala are covered under cashless network:<br><br>
-<strong>Kozhikode/Calicut:</strong> Baby Memorial, MIMS, Aster MIMS, Medical College<br>
-<strong>Kochi/Ernakulam:</strong> Aster Medcity, Amrita, Lakeshore, KIMS<br>
-<strong>Thrissur:</strong> Jubilee Mission, Amala, Elite Mission<br>
-<strong>Malappuram:</strong> MES Medical College, KIMS Al Shifa<br>
-<strong>Trivandrum:</strong> SUT, Ananthapuri, Sree Chitra<br><br>
-📍 Network size by insurer:<br>
-⭐ Star Health: 500+ hospitals in Kerala<br>
-💙 HDFC Ergo: 300+ hospitals<br>
-💚 Niva Bupa: 200+ hospitals<br><br>
-<em>Always verify your local hospital is in the network before buying.</em>`,
-    wa: false
-  },
-
-  /* ── RENEWAL ── */
-  {
-    id: 'renewal',
-    keywords: ['renewal','renew','lapse','missed renewal','expired policy','renewal date','grace period'],
-    answer: `<strong>Policy Renewal 🔁</strong><br><br>
-<strong>Renew on time to protect your benefits:</strong><br><br>
-✅ Renew before expiry date to maintain continuity<br>
-✅ <strong>Grace period:</strong> 30 days after expiry (claim not valid during grace period)<br>
-✅ If lapsed beyond grace period — treated as new policy (waiting periods restart)<br><br>
-<strong>What you lose if policy lapses:</strong><br>
-❌ No claim bonus accumulated<br>
-❌ Waiting period credit lost<br>
-❌ Pre-existing disease cover resets to 0<br><br>
-💡 <em>Set a calendar reminder 45 days before renewal. Our advisor sends renewal reminders to all clients.</em>`,
-    wa: false
-  }
-];
-
-/* ── WA SVG shorthand ── */
 const WA_SVG = `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.859L.057 23.862a.5.5 0 00.609.61l6.102-1.472A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.502-5.201-1.38l-.374-.217-3.876.935.966-3.788-.237-.389A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>`;
 
-function waButton(userText) {
-  const enc = encodeURIComponent('Hi! I need help with: ' + userText);
-  return `<br><br><button class="chat-wa-redirect" onclick="window.open('https://wa.me/${PHONE}?text=${enc}','_blank')">${WA_SVG} Chat with advisor on WhatsApp</button>`;
-}
-
-/* ── MATCHER: keyword scoring ── */
-function findAnswer(query) {
-  const q = query.toLowerCase().trim();
-  let best = null, bestScore = 0;
-
-  for (const entry of KB) {
-    let score = 0;
-    for (const kw of entry.keywords) {
-      if (q.includes(kw)) score += kw.split(' ').length; // multi-word keywords score higher
-    }
-    if (score > bestScore) { bestScore = score; best = entry; }
-  }
-
-  if (best && bestScore > 0) {
-    const html = best.answer + (best.wa ? waButton(query) : '');
-    return { html, found: true };
-  }
-  return { html: null, found: false };
-}
-
-/* ── FALLBACK when no KB match ── */
-function fallbackAnswer(query) {
-  const enc = encodeURIComponent('Hi! I have a question: ' + query);
-  return `I don't have a specific answer for that in my knowledge base yet.<br><br>
-Our advisor will answer this personally — it takes just a minute on WhatsApp! 🟢<br><br>
-<button class="chat-wa-redirect" onclick="window.open('https://wa.me/${PHONE}?text=${enc}','_blank')">${WA_SVG} Ask advisor directly</button>`;
-}
-
-/* ── SUGGESTED FOLLOW-UPS after each answer ── */
-const SUGGESTIONS = {
-  family_floater: ['What is the waiting period?','How much cover do I need?','Star Health plans'],
-  individual:     ['What does it cost?','Tax benefit on premium?','Care Supreme details'],
-  senior:         ['Claim process','Which hospitals in Kerala?','Niva Bupa senior plan'],
-  quote:          ['Family floater plan','Individual health plan','Senior citizen plan'],
-  cashless_claim: ['Reimbursement process','Which hospitals in Kerala?','Claim rejected?'],
-  reimbursement:  ['Documents needed','Claim rejected?','How much cover needed?'],
-  premium:        ['Tax saving under 80D','Family floater vs individual','Get a quote'],
-  star_health:    ['Get a Star Health quote','Cashless hospitals Kerala','Family floater plan'],
-  hdfc:           ['Get HDFC quote','Compare Star vs HDFC','Family floater plan'],
-  hospitals:      ['Cashless claim process','Which plan covers this hospital?','Get a quote'],
-};
-
-function showSuggestions(entryId) {
-  const suggestions = SUGGESTIONS[entryId];
-  if (!suggestions) return '';
-  return `<div class="chat-suggestions">${suggestions.map(s =>
-    `<button class="suggestion-chip" onclick="quickAsk('${s}')">${s}</button>`
-  ).join('')}</div>`;
-}
-
-/* ============================================================
-   UI FUNCTIONS
-   ============================================================ */
-function openWhatsApp(msg) {
-  window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
-}
-
-function handleSearch() {
-  const coverFor = document.getElementById('coverFor').value;
-  const coverAmt = document.getElementById('coverAmount').value;
-  const labels = {self:'self',family:'self and spouse',family4:'family of 4',parents:'senior parents',group:'company group'};
-  const q = coverFor && coverAmt
-    ? `I need a health insurance plan for ${labels[coverFor]||coverFor} with ₹${coverAmt} lakhs cover`
-    : 'I need help choosing a health insurance plan';
-  openChat(q);
-}
-
-function filterPlans(type, btn) {
-  document.querySelectorAll('.chip').forEach(c => c.classList.remove('chip-active'));
-  btn.classList.add('chip-active');
-  document.querySelectorAll('.plan-card').forEach(card => {
-    card.style.display = (type === 'all' || card.dataset.type === type) ? '' : 'none';
+/* fix WHASAPP_SVG placeholders left in plan buttons */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.plan-btn-wa').forEach(btn => {
+    btn.innerHTML = btn.innerHTML.replace('WHASAPP_SVG', WA_SVG);
   });
-}
+});
 
-let chatOpen = false;
-function toggleChat() {
-  chatOpen = !chatOpen;
-  document.getElementById('chatPanel').classList.toggle('chat-panel-open', chatOpen);
-  document.getElementById('chatFab').classList.toggle('chat-fab-active', chatOpen);
-  if (chatOpen) document.getElementById('chatInput').focus();
-}
+/* ── KNOWLEDGE BASE ──────────────────────────────────── */
+const KB = [
+  { id:'ff', keywords:['family floater','family plan','family cover','family health','family insurance','floater'],
+    answer:`<strong>Family Floater Plan</strong><br><br>Covers your entire family — self, spouse, children — under <strong>one shared sum insured</strong>. 20–30% cheaper than separate individual plans.<br><br><strong>Example:</strong> ₹10L floater for family of 4 ≈ ₹10,000–14,000/year vs ₹25,000+ for 4 individual plans.<br><br>Best for: Families where all members are under 55 and generally healthy.`,
+    waPrompt:'Hi, I want to know about family floater plans.' },
 
-function openChat(prefillMsg) {
-  if (!chatOpen) toggleChat();
-  if (prefillMsg) {
-    document.getElementById('chatInput').value = prefillMsg;
-    setTimeout(() => sendMessage(), 280);
+  { id:'premium', keywords:['premium','cost','price','how much','charge','fee','rate','yearly','annual','monthly'],
+    answer:`<strong>Health Insurance Premium — Kerala</strong><br><br>Approximate annual premiums (2024):<br><br><table style="font-size:12px;width:100%;border-collapse:collapse"><tr style="background:#E1F5EE"><td style="padding:5px 8px"><strong>Plan Type</strong></td><td style="padding:5px 8px"><strong>Cover</strong></td><td style="padding:5px 8px"><strong>~Premium/yr</strong></td></tr><tr><td style="padding:5px 8px;border-top:1px solid #E0EDE9">Individual (30 yrs)</td><td style="padding:5px 8px;border-top:1px solid #E0EDE9">₹5L</td><td style="padding:5px 8px;border-top:1px solid #E0EDE9">₹4,500–7,000</td></tr><tr><td style="padding:5px 8px;border-top:1px solid #E0EDE9">Family of 4</td><td style="padding:5px 8px;border-top:1px solid #E0EDE9">₹10L</td><td style="padding:5px 8px;border-top:1px solid #E0EDE9">₹10,000–15,000</td></tr><tr><td style="padding:5px 8px;border-top:1px solid #E0EDE9">Senior (60 yrs)</td><td style="padding:5px 8px;border-top:1px solid #E0EDE9">₹5L</td><td style="padding:5px 8px;border-top:1px solid #E0EDE9">₹18,000–28,000</td></tr></table><br>Premium varies by age, medical history and insurer. For an exact quote:`,
+    needsWA:true, waPrompt:'Hi, I need a premium quote for health insurance.' },
+
+  { id:'wait', keywords:['waiting period','wait','pre-existing','pre existing','existing disease','30 day','exclusion period'],
+    answer:`<strong>Waiting Periods in Health Insurance</strong><br><br><strong>30 days</strong> — Initial waiting (no claims except accidents)<br><strong>2–4 years</strong> — Pre-existing diseases (diabetes, BP, thyroid…)<br><strong>1–2 years</strong> — Specific illnesses (hernia, cataract, joint replacement)<br><strong>9 months–2 years</strong> — Maternity cover<br><br>⚡ <em>Porting tip:</em> Completed waiting periods carry over to the new insurer — you don't restart.`,
+    waPrompt:'Hi, I have a question about waiting periods in health insurance.' },
+
+  { id:'cashless', keywords:['cashless','network hospital','hospital list','claim cashless','tpa','health card'],
+    answer:`<strong>How Cashless Claims Work</strong><br><br>1️⃣ Go to a <strong>network hospital</strong><br>2️⃣ Show your <strong>health card / policy number</strong> at TPA desk<br>3️⃣ Hospital sends pre-auth form to insurer<br>4️⃣ Insurer approves in 2–4 hrs (planned) or 1 hr (emergency)<br>5️⃣ Insurer pays hospital directly — you pay only non-covered items.<br><br>Kerala network hospitals: Aster, Lisie, KIMS, Sunrise, PVS, Baby Memorial, Malabar Hospital and 400+ others.`,
+    waPrompt:'Hi, I need the cashless hospital list in Kerala for my insurance.' },
+
+  { id:'reimburse', keywords:['reimbursement','reimburse','bill','bills','non-network','submit claim','claim process'],
+    answer:`<strong>Reimbursement Claim Process</strong><br><br>Use at <strong>non-network hospitals</strong>:<br><br>📋 <strong>Documents needed:</strong><br>• Original bills & receipts<br>• Discharge summary<br>• Doctor prescriptions & lab reports<br>• Completed claim form<br>• ID proof + policy copy<br><br>📅 Submit within <strong>30–45 days</strong> of discharge. We help with complete paperwork.`,
+    needsWA:true, waPrompt:'Hi, I need help with health insurance claim paperwork.' },
+
+  { id:'senior', keywords:['senior','elderly','parents','mother','father','old age','60','65','70','above 60','above 55'],
+    answer:`<strong>Senior Citizen Health Insurance</strong><br><br>Plans available for ages <strong>60 to 80–85 years</strong>.<br><br><strong>Top Kerala picks:</strong><br>• Niva Bupa Senior First — up to age 80, pre-existing Day 1 variants<br>• Star Senior Red Carpet — no medical test up to 75<br>• Care Senior — annual health check included<br><br>⚠️ Premium is higher for seniors. Buy when parents are 55–60 before health conditions arise.`,
+    needsWA:true, waPrompt:'Hi, I need a health plan for my senior parents.' },
+
+  { id:'maternity', keywords:['maternity','pregnancy','delivery','baby','newborn','prenatal','postnatal','prasavam'],
+    answer:`<strong>Maternity Cover in Health Insurance</strong><br><br>Covered with a <strong>waiting period of 9 months to 2 years</strong>.<br><br>✅ Normal delivery, C-section, pre/post-natal care, newborn cover (90 days)<br><br><strong>Best maternity plans:</strong><br>• Star Comprehensive — 9 month wait<br>• Niva Bupa ReAssure 2.0 — ported policyholders can get Day 1<br>• HDFC Optima Secure — maternity add-on available<br><br><em>Buy early</em> — before planning pregnancy — to complete the waiting period.`,
+    needsWA:true, waPrompt:'Hi, I need a health plan with maternity cover.' },
+
+  { id:'critical', keywords:['critical illness','cancer','heart attack','stroke','kidney','dialysis','critical cover','ci plan'],
+    answer:`<strong>Critical Illness Cover</strong><br><br>Pays a <strong>lump sum on diagnosis</strong> (not hospitalisation bills) for diseases like Cancer, Heart Attack, Stroke, Kidney Failure, Major Organ Transplant, Paralysis…<br><br>The lump sum covers lost income, home care, EMIs, family expenses.<br><br><strong>Available as:</strong><br>• Standalone CI plan (₹10L–1Cr)<br>• Add-on rider to base plan (cheaper)<br><br>Recommended <em>alongside</em> a regular health plan, not instead.`,
+    waPrompt:'Hi, I want to know more about critical illness cover.' },
+
+  { id:'star', keywords:['star health','star plan','star insurance','comprehensive care'],
+    answer:`<strong>Star Health Insurance — Kerala</strong><br><br>India's #1 standalone health insurer. Largest cashless network in Kerala (500+ hospitals).<br><br><strong>Popular Star plans:</strong><br>• <strong>Star Comprehensive</strong> — OPD, maternity, no room rent limit ✅ Best all-round<br>• <strong>Star Senior Red Carpet</strong> — age 60–75, no medical test<br>• <strong>Star Super Surplus</strong> — top-up for existing policyholders<br>• <strong>Star Care</strong> — affordable individual entry plan<br><br>We are authorised Star Health advisors.`,
+    needsWA:true, waPrompt:'Hi, I want a quote for Star Health Insurance plan.' },
+
+  { id:'hdfc', keywords:['hdfc','hdfc ergo','optima','ergo'],
+    answer:`<strong>HDFC Ergo Health Insurance</strong><br><br>Known for the <strong>Optima series</strong>:<br><br>• <strong>Optima Restore</strong> — sum insured auto-refills after claim, 300+ Kerala hospitals<br>• <strong>Optima Secure</strong> — 2x cover from Day 1, maternity add-on<br>• <strong>My:health Suraksha</strong> — affordable basic plan<br><br>2-year pre-existing wait. Strong digital claim process.`,
+    needsWA:true, waPrompt:'Hi, I want to compare HDFC Ergo health plans.' },
+
+  { id:'niva', keywords:['niva','bupa','niva bupa','reassure'],
+    answer:`<strong>Niva Bupa Health Insurance</strong><br><br>Formerly Max Bupa. Known for <strong>30-min cashless approval</strong> guarantee for planned procedures.<br><br>• <strong>ReAssure 2.0</strong> — unlimited restore, no room rent cap<br>• <strong>Senior First</strong> — age 60–75 group<br>• <strong>Health Companion</strong> — affordable entry plan<br><br>Strong network in Kozhikode, Kochi, Thrissur.`,
+    needsWA:true, waPrompt:'Hi, I want to know about Niva Bupa plans.' },
+
+  { id:'whatis', keywords:['what is','health insurance','explain','medical insurance','why insurance','why buy','health cover'],
+    answer:`<strong>What is Health Insurance?</strong><br><br>Pays your <strong>hospital bills</strong> when you or your family need treatment — so you don't drain savings or take loans.<br><br>You pay a small annual <em>premium</em>. In return the insurer covers:<br>• Hospitalisation (room, surgery, ICU)<br>• Doctor fees, medicines, tests<br>• Ambulance charges<br>• Pre & post hospitalisation (30–60 days)<br><br>In Kerala, even a 3-day hospital stay can cost ₹40,000–2,00,000. A ₹10,000/yr policy protects against that.`,
+    waPrompt:'Hi, I want to understand health insurance options for my family.' },
+
+  { id:'irdai', keywords:['irdai','license','licensed','agent','safe assets','who are you','about','certified'],
+    answer:`<strong>About Safe Assets</strong><br><br>Safe Assets is an <strong>IRDAI licensed health insurance advisory</strong> based in Kerala.<br><br>✅ IRDAI licensed — fully authorised to sell insurance<br>✅ Zero brokerage — same premium as buying direct<br>✅ Malayalam & English support<br>✅ Claim assistance — admission to settlement<br>✅ 200+ Kerala families served<br><br>Advisor available 7 days/week on WhatsApp: <strong>+91 92920 26138</strong>`,
+    waPrompt:'Hi, I want to speak with a Safe Assets advisor.' },
+
+  { id:'port', keywords:['port','porting','switch','change insurer','transfer policy','move insurance'],
+    answer:`<strong>Health Insurance Portability</strong><br><br>Switch insurer without losing waiting period benefits (IRDAI mandated).<br><br>✅ Completed waiting periods carry over<br>✅ No-claim bonus also transfers<br>⚠️ Apply <strong>45 days before renewal</strong><br>⚠️ Cannot port mid-term<br><br><em>Not happy with current insurer's service, premium or network?</em> We evaluate and port smoothly.`,
+    needsWA:true, waPrompt:'Hi, I want to port my existing health insurance to a better plan.' },
+
+  { id:'suminsured', keywords:['sum insured','how much cover','coverage amount','cover amount','adequate','enough','sufficient','how much insurance'],
+    answer:`<strong>How Much Cover Do You Need?</strong><br><br>Kerala 2024 recommendations:<br><br>👤 <strong>Individual</strong> — ₹5L minimum, ₹10L ideal<br>👨‍👩‍👧‍👦 <strong>Family of 4</strong> — ₹10L minimum, ₹15–20L ideal<br>👴 <strong>Senior parents</strong> — ₹5–10L (higher premiums)<br><br>Medical inflation in Kerala is 12–15%/yr. Choose a plan with <strong>restore benefit</strong> so sum insured refills after a claim.`,
+    waPrompt:'Hi, I need help choosing the right coverage amount.' },
+
+  { id:'opd', keywords:['opd','outpatient','consultation','doctor visit','clinic','medicines','pharmacy','opd cover'],
+    answer:`<strong>OPD (Outpatient) Cover</strong><br><br>Standard plans cover only <strong>hospitalisation (24+ hrs)</strong>. OPD cover adds:<br>• Doctor consultation fees<br>• Diagnostic tests<br>• Pharmacy / medicines<br><br><strong>Plans with OPD:</strong> Star Comprehensive, Niva Bupa ReAssure, Care Supreme<br><br>Adds ~15–25% to premium but worth it for families with regular clinic visits.`,
+    waPrompt:'Hi, I want a health plan that includes OPD cover.' },
+
+  { id:'docs', keywords:['document','documents','papers','what to submit','claim documents','required','form'],
+    answer:`<strong>Claim Documents Checklist</strong><br><br><strong>Cashless:</strong><br>• Health card / policy number<br>• ID proof (Aadhaar / PAN)<br>• Pre-auth form (hospital fills)<br><br><strong>Reimbursement:</strong><br>• Original bills, receipts, prescriptions<br>• Discharge summary + lab reports<br>• Completed claim form<br>• Bank details (cancelled cheque)<br>• ID proof + policy copy<br><br>We assist with organising all documents.`,
+    needsWA:true, waPrompt:'Hi, I need help with health insurance claim documents.' },
+
+  { id:'renewal', keywords:['renew','renewal','expire','lapsed','lapse','policy expire'],
+    answer:`<strong>Health Insurance Renewal</strong><br><br>• Renew <strong>before the expiry date</strong> — no coverage gap<br>• Lapsed policy = waiting period progress lost + NCB forfeited<br>• Grace period: 30 days (no coverage during grace period)<br>• Lapsed over 90 days = treated as fresh policy (waiting periods restart)<br><br>⚡ We send renewal reminders to all our clients automatically.`,
+    waPrompt:'Hi, I need to renew my health insurance policy.' },
+
+  { id:'group', keywords:['group','company','employees','staff','sme','business','corporate','team','group insurance','office'],
+    answer:`<strong>Group Health Insurance for Businesses</strong><br><br>Covers all employees under one master policy.<br><br>✅ No medical tests for enrollment<br>✅ Pre-existing diseases covered from Day 1<br>✅ Lower premium per head vs individual<br>✅ Tax deductible as business expense<br>✅ Minimum 5 employees<br><br>Available from: Star, HDFC Ergo, New India, Oriental, United India.<br>We handle setup, additions/deletions and claim support entirely.`,
+    needsWA:true, waPrompt:'Hi, I need group health insurance for my company employees.' },
+
+  { id:'topup', keywords:['top up','topup','super top','top-up','super topup','deductible','booster','extra cover'],
+    answer:`<strong>Top-Up & Super Top-Up Plans</strong><br><br>Affordable way to increase coverage without high base-plan premiums.<br><br><strong>Top-Up:</strong> Covers hospitalisation above a deductible per claim. E.g. ₹5L deductible + ₹20L top-up = ₹25L total for ~₹3,000/yr extra.<br><br><strong>Super Top-Up:</strong> Deductible is cumulative for the whole year (smarter).<br><br>Best strategy: Base plan (₹5–10L) + Super Top-Up (₹20L) = very high cover at low cost.`,
+    waPrompt:'Hi, I want to add a top-up plan to my existing insurance.' },
+
+  { id:'tax', keywords:['tax','80d','section 80','tax benefit','deduction','income tax','save tax'],
+    answer:`<strong>Tax Benefits on Health Insurance (Section 80D)</strong><br><br>👤 Self + family premium: <strong>₹25,000 deduction/year</strong><br>👴 + Senior parents premium: <strong>₹50,000 additional</strong><br>📊 <strong>Total possible: ₹75,000/year</strong><br><br>Example: ₹12,000 (family) + ₹20,000 (parents) = ₹32,000 deduction<br>At 30% tax bracket = <strong>₹9,600 saved in taxes</strong><br><br>Making your effective premium significantly cheaper!`,
+    waPrompt:'Hi, I want to know about tax benefits on health insurance.' },
+];
+
+const SUGGESTIONS = [
+  { label:'Family floater plan', q:'What is a family floater plan?' },
+  { label:'Premium cost', q:'How much does health insurance cost?' },
+  { label:'Cashless claim', q:'How does cashless claim work?' },
+  { label:'Senior parents plan', q:'Health insurance for parents above 60' },
+  { label:'Waiting period', q:'What is waiting period in health insurance?' },
+  { label:'Maternity cover', q:'Is maternity covered in health insurance?' },
+  { label:'Tax benefit 80D', q:'What is the tax benefit on health insurance?' },
+  { label:'Top-up plans', q:'What is a super top-up health plan?' },
+  { label:'Port my policy', q:'How to port health insurance?' },
+  { label:'Claim documents', q:'What documents are needed for a claim?' },
+];
+
+/* ── ENGINE ─────────────────────────────────────────── */
+function findAnswer(q) {
+  q = q.toLowerCase();
+  let best = null, bestScore = 0;
+  for (const e of KB) {
+    let score = 0;
+    for (const kw of e.keywords) { if (q.includes(kw)) score += kw.split(' ').length; }
+    if (score > bestScore) { bestScore = score; best = e; }
   }
+  return bestScore > 0 ? best : null;
 }
 
-function quickAsk(text) { openChat(text); }
+function waBtn(prompt) {
+  const enc = encodeURIComponent(prompt);
+  return `<div style="margin-top:12px"><button class="chat-wa-redirect" onclick="window.open('https://wa.me/${PHONE}?text=${enc}','_blank')">${WA_SVG} Chat with advisor on WhatsApp</button></div>`;
+}
 
-function handleChatKey(e) { if (e.key === 'Enter') sendMessage(); }
-
-function addMessage(html, role) {
-  const c = document.getElementById('chatMessages');
+/* ── SHARED CHAT FUNCTIONS ───────────────────────────── */
+function addMsg(containerId, html, role) {
+  const c = document.getElementById(containerId);
   const d = document.createElement('div');
   d.className = `msg msg-${role}`;
-  const b = document.createElement('div');
-  b.className = 'msg-bubble';
-  b.innerHTML = html;
-  const t = document.createElement('div');
-  t.className = 'msg-time';
-  t.textContent = new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
-  d.appendChild(b); d.appendChild(t);
+  d.innerHTML = `<div class="msg-bubble">${html}</div><div class="msg-time">${new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'})}</div>`;
   c.appendChild(d);
   c.scrollTop = c.scrollHeight;
 }
 
-function addTypingIndicator() {
-  const c = document.getElementById('chatMessages');
+function addTyping(containerId) {
+  const c = document.getElementById(containerId);
   const d = document.createElement('div');
-  d.className = 'msg msg-bot'; d.id = 'typingIndicator';
+  d.className = 'msg msg-bot'; d.id = containerId + '-typing';
   d.innerHTML = '<div class="msg-bubble typing-bubble"><span></span><span></span><span></span></div>';
   c.appendChild(d); c.scrollTop = c.scrollHeight;
 }
+function removeTyping(containerId) { const el = document.getElementById(containerId+'-typing'); if(el) el.remove(); }
 
-function removeTypingIndicator() {
-  const el = document.getElementById('typingIndicator');
-  if (el) el.remove();
+function renderSuggestions(containerId) {
+  const c = document.getElementById(containerId);
+  if (document.getElementById(containerId+'-sugg')) return;
+  const wrap = document.createElement('div');
+  wrap.className = 'suggestion-chips-wrap'; wrap.id = containerId+'-sugg';
+  wrap.innerHTML = '<div class="suggestion-chips-label">Tap a topic to get started:</div><div class="suggestion-chips">' +
+    SUGGESTIONS.map(s => `<button class="suggestion-chip" onclick="suggClick(this,'${containerId}','${s.q.replace(/'/g,"\\'")}')">${s.label}</button>`).join('') + '</div>';
+  c.appendChild(wrap); c.scrollTop = c.scrollHeight;
 }
 
-function sendMessage() {
-  const input = document.getElementById('chatInput');
-  const userText = input.value.trim();
-  if (!userText) return;
+function suggClick(btn, containerId, q) {
+  btn.disabled = true; btn.style.opacity = '0.45';
+  const prefix = containerId.startsWith('m') ? 'm' : 'd';
+  const inputEl = document.getElementById(prefix+'-chatInput');
+  inputEl.value = q;
+  sendMessage(prefix);
+}
+
+function sendMessage(prefix) {
+  const inputId = prefix+'-chatInput';
+  const sendBtnId = prefix+'-chatSendBtn';
+  const msgContainerId = prefix === 'm' ? 'm-chatMessages' : 'd-chatMessages';
+
+  const input = document.getElementById(inputId);
+  const text = input.value.trim(); if (!text) return;
   input.value = '';
 
-  addMessage(userText, 'user');
-  addTypingIndicator();
+  const sugg = document.getElementById(msgContainerId+'-sugg');
+  if (sugg) sugg.remove();
 
-  /* Simulate a tiny thinking delay for natural feel */
+  addMsg(msgContainerId, text, 'user');
+  addTyping(msgContainerId);
+  document.getElementById(sendBtnId).disabled = true;
+
   setTimeout(() => {
-    removeTypingIndicator();
-    const result = findAnswer(userText);
-    let html = result.found ? result.html : fallbackAnswer(userText);
-
-    /* Add suggestion chips for known topics */
-    if (result.found) {
-      const matched = KB.find(e => e.keywords.some(k => userText.toLowerCase().includes(k)));
-      if (matched) html += showSuggestions(matched.id);
-    }
-
-    addMessage(html, 'bot');
-  }, 600);
+    removeTyping(msgContainerId);
+    const match = findAnswer(text);
+    const reply = match ? match.answer + waBtn(match.waPrompt)
+                        : `I don't have that specific info right now, but our advisor can help instantly!` + waBtn(`Hi! I have a question: ${text}`);
+    addMsg(msgContainerId, reply, 'bot');
+    document.getElementById(sendBtnId).disabled = false;
+    document.getElementById(inputId).focus();
+    setTimeout(() => renderSuggestions(msgContainerId), 400);
+  }, 480);
 }
+
+/* ── MOBILE CHAT ─────────────────────────────────────── */
+let mChatOpen = false;
+function mobileToggleChat() {
+  mChatOpen = !mChatOpen;
+  document.getElementById('m-chatPanel').classList.toggle('chat-panel-open', mChatOpen);
+  document.getElementById('m-chatFab').classList.toggle('chat-fab-active', mChatOpen);
+  if (mChatOpen) document.getElementById('m-chatInput').focus();
+}
+function mobileOpenChat(q) {
+  if (!mChatOpen) mobileToggleChat();
+  if (q) { document.getElementById('m-chatInput').value = q; setTimeout(() => sendMessage('m'), 350); }
+}
+
+/* ── DESKTOP CHAT ────────────────────────────────────── */
+function desktopAskChat(q) {
+  document.getElementById('d-chatInput').value = q;
+  sendMessage('d');
+  document.getElementById('d-chatMessages').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+/* ── SEARCH / FILTER ─────────────────────────────────── */
+function handleSearch(forId, amountId) {
+  const coverFor = document.getElementById(forId).value;
+  const coverAmount = document.getElementById(amountId).value;
+  if (!coverFor || !coverAmount) {
+    const prefix = forId.startsWith('m') ? 'm' : 'd';
+    if (prefix === 'm') mobileOpenChat('What is a good health insurance plan for my family?');
+    else desktopAskChat('What is a good health insurance plan for my family?');
+    return;
+  }
+  const labels = {self:'myself',family:'self and spouse',family4:'family of 4',parents:'my senior parents',group:'company employees'};
+  const q = `I need a health insurance plan for ${labels[coverFor]||coverFor} with ₹${coverAmount} lakhs cover.`;
+  if (forId.startsWith('m')) mobileOpenChat(q);
+  else desktopAskChat(q);
+}
+
+function filterPlans(type, btn, containerId) {
+  btn.closest('.chip-scroll,.dt-sidebar-filters').querySelectorAll('.chip,.dt-filter-btn').forEach(b => b.classList.remove('chip-active','dt-filter-active'));
+  btn.classList.add(containerId === 'd-plans' ? 'dt-filter-active' : 'chip-active');
+  document.getElementById(containerId).querySelectorAll('[data-type]').forEach(card => {
+    card.style.display = (type==='all' || card.dataset.type===type) ? '' : 'none';
+  });
+}
+
+function dtFilter(type, btn) {
+  filterPlans(type, btn, 'd-plans');
+  const labels = {all:'All Plans',family:'Family Floater',individual:'Individual',senior:'Senior Citizen',critical:'Critical Illness',group:'Group / SME'};
+  document.getElementById('d-activeFilter').textContent = 'Showing: '+(labels[type]||type);
+}
+
+function dtSection(s) {
+  document.querySelectorAll('.dt-nav-link').forEach(l => l.classList.remove('dt-nav-active'));
+  event.target.classList.add('dt-nav-active');
+  if (s === 'faq') desktopAskChat('What are the most common health insurance questions?');
+  else if (s === 'about') desktopAskChat('Tell me about Safe Assets and your services');
+  else if (s === 'compare') desktopAskChat('Compare the top health insurance plans in Kerala');
+}
+
+function openWhatsApp(msg) {
+  window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+/* ── INIT ─────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => renderSuggestions('m-chatMessages'), 300);
+  setTimeout(() => renderSuggestions('d-chatMessages'), 300);
+});
 </script>
 </body>
 </html>
