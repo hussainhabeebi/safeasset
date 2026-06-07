@@ -14,6 +14,8 @@
   --blue-deep:    #1A3A8F;
   --blue-mid:     #1E54C8;
   --blue-light:   #3A7BD5;
+  --brand-primary: #133A64;
+  --brand-mid:     #1A5C76;
   --gold:         #C8973A;
   --gold-light:   #E8C97A;
   --ivory:        #FAF7F2;
@@ -74,7 +76,7 @@ a { text-decoration: none; color: inherit; }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
 .nav-logo img { height: 44px; width: auto; }
 .nav-logo-text { display: flex; flex-direction: column; }
-.nav-logo-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--blue-deep); line-height: 1.1; }
+.nav-logo-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--brand-primary); line-height: 1.1; }
 .nav-logo-sub { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); }
 
 .nav-links { display: flex; align-items: center; gap: 4px; }
@@ -86,12 +88,12 @@ a { text-decoration: none; color: inherit; }
 .nav-link:hover { background: var(--ivory-dark); color: var(--green-deep); }
 .nav-link.active { color: var(--green-mid); font-weight: 600; }
 .nav-cta {
-  background: var(--blue-deep); color: white !important;
+  background: var(--brand-primary); color: white !important;
   padding: 9px 20px !important; border-radius: 20px !important;
   font-weight: 600 !important; font-size: 13px !important;
   transition: transform 0.15s, background 0.15s !important;
 }
-.nav-cta:hover { background: var(--blue-mid) !important; transform: translateY(-1px); }
+.nav-cta:hover { background: var(--brand-mid) !important; transform: translateY(-1px); }
 
 /* hamburger */
 .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
@@ -117,8 +119,8 @@ a { text-decoration: none; color: inherit; }
   padding: 13px 28px; border-radius: 28px; border: none; cursor: pointer;
   transition: all 0.2s; text-decoration: none; white-space: nowrap;
 }
-.btn-primary { background: var(--blue-deep); color: white; }
-.btn-primary:hover { background: var(--blue-mid); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn-primary { background: var(--brand-primary); color: white; }
+.btn-primary:hover { background: var(--brand-mid); transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .btn-outline { background: transparent; color: var(--green-deep); border: 2px solid var(--green-deep); }
 .btn-outline:hover { background: var(--green-deep); color: white; transform: translateY(-2px); }
 .btn-gold { background: var(--gold); color: white; }
@@ -144,7 +146,7 @@ a { text-decoration: none; color: inherit; }
 .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--cream), transparent); margin: 0; }
 
 /* ── GREEN SECTION BG ── */
-.bg-green { background: linear-gradient(135deg, var(--blue-deep) 0%, var(--green-deep) 100%); }
+.bg-green { background: linear-gradient(135deg, var(--blue-deep) 0%, var(--brand-mid) 50%, var(--green-deep) 100%); }
 .bg-green h1, .bg-green h2, .bg-green h3, .bg-green h4 { color: white; }
 .bg-green p { color: rgba(255,255,255,0.8); }
 .bg-green .section-label { color: var(--gold-light); }
@@ -155,7 +157,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ── PAGE HERO (inner pages) ── */
 .page-hero {
-  background: linear-gradient(135deg, var(--blue-deep) 0%, var(--green-mid) 100%);
+  background: linear-gradient(135deg, var(--blue-deep) 0%, var(--brand-mid) 50%, var(--green-mid) 100%);
   padding: clamp(60px, 10vw, 100px) clamp(20px, 5vw, 60px) clamp(50px, 8vw, 80px);
   position: relative; overflow: hidden;
 }
@@ -174,7 +176,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ── FOOTER ── */
 .footer {
-  background: linear-gradient(135deg, var(--blue-deep) 0%, var(--green-deep) 100%);
+  background: linear-gradient(135deg, var(--blue-deep) 0%, var(--brand-mid) 50%, var(--green-deep) 100%);
   padding: clamp(40px, 6vw, 70px) clamp(20px, 5vw, 60px) 24px;
 }
 .footer-inner { max-width: 1200px; margin: 0 auto; }
@@ -409,7 +411,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ── HERO ── */
 .hero {
-  background: linear-gradient(160deg, var(--blue-deep) 0%, var(--green-mid) 60%, #1A8A6A 100%);
+  background: linear-gradient(160deg, var(--blue-deep) 0%, var(--brand-mid) 40%, var(--green-mid) 70%, #1A8A6A 100%);
   position: relative; overflow: hidden;
   padding: clamp(60px,10vw,100px) clamp(20px,5vw,60px) 0;
 }
